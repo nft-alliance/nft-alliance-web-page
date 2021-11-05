@@ -8,7 +8,7 @@ const Home: NextPage = () => {
       <Head>
         <title>NFT Alliance</title>
         <meta name="description" content="Arbitrum NFT Alliance" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/nft.png" />
       </Head>
 
       <main className={styles.main}>
