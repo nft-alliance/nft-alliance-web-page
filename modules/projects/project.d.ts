@@ -3,5 +3,6 @@ export type Project = {
     url: string,
     description: string,
     image: string,
-    categories: string[]
+    categories: string[],
+    price: number
 }
