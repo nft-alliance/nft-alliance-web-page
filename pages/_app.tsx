@@ -97,6 +97,6 @@ function App({ Component, pageProps }: AppProps) {
     </div>
   );
 }
-export default function AppWrapper(props) {
+export default function AppWrapper(props: any) {
   return <App {...props} />;
 }
