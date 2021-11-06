@@ -25,6 +25,8 @@ const Home: NextPage = () => {
             <p>
               If you are a NFT project founder/builder, you can join our Discord and apply. Note: We will not accept applications from copies of existing projects.
             </p>
+            <h3>What will the NFT Alliance do ?</h3>
+            <p>We'll build exclusive products on Arbitrum which leverage the NFT technology. Owning one NFT from each collection member of the alliance will give you access to exclusive content so grab some now.</p>
           </div>
 
           <div className="projects-wrapper">

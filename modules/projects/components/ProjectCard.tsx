@@ -15,6 +15,9 @@ export function ProjectCard({
           </a>
         </div>
         <div className="project-description">{project.description}</div>
+        <div className="project-price">
+          Price: {project.price >= 0 ? `${project.price} Ξ` : 'Sold out'}
+        </div>
         <div className="project-categories">
             {project.categories
                 .map(c => <div className="project-category" key={`${project.title}-${c}`}>{c}</div>)}
@@ -34,6 +37,11 @@ export function ProjectCard({
             display: flex;
             align-items: center;
 
+        }
+
+        .project-price {
+          margin: 15px 0;
+          font-weight: bold;
         }
 
         .project-category {

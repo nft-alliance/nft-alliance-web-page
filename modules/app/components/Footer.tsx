@@ -10,7 +10,7 @@ export function Footer() {
           rel="noopener noreferrer"
           title="Twitter account"
         >
-          Twitter
+          👉 Twitter
         </a>
 
        
@@ -21,7 +21,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Join our Discord
+          👉 Join our Discord
         </a>
 
      
@@ -33,9 +33,9 @@ export function Footer() {
       <style jsx>
         {`
           .footer {
-            width: 100%;
+            width: 75%;
             height: 100px;
-            margin-top: 30px;
+            margin: auto;
             padding: 30px;
             display: flex;
             justify-content: center;
@@ -45,12 +45,14 @@ export function Footer() {
 
           .footer a {
             display: flex;
+            padding: 0 10px;
             justify-content: center;
             align-items: center;
             flex-grow: 1;
             color: white;
             text-transform: uppercase;
             text-decoration: none;
+            color: black;
           }
         `}
       </style>
