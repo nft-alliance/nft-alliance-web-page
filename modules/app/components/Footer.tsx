@@ -4,27 +4,34 @@ export function Footer() {
   return (
     <div>
       <div className="footer">
-        <a
-          href="https://twitter.com/"
+        {/* <a
+          href="https://twitter.com/NFTAlliance"
           target="_blank"
           rel="noopener noreferrer"
           title="Twitter account"
         >
           👉 Twitter
-        </a>
+        </a> */}
 
        
 
         <a
           title="Join discord"
-          href="https://discord.gg/xx"
+          href="https://discord.gg/eX9eXDu4tu"
           target="_blank"
           rel="noopener noreferrer"
         >
           👉 Join our Discord
         </a>
 
-     
+        <a
+          title="GitHub"
+          href="https://github.com/nft-alliance"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          👉 GitHub
+        </a>
 
       </div>
       <div style={{ padding: '30px', textAlign: 'center'}}>
@@ -44,12 +51,8 @@ export function Footer() {
           }
 
           .footer a {
-            display: flex;
+            
             padding: 0 10px;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 1;
-            color: white;
             text-transform: uppercase;
             text-decoration: none;
             color: black;
