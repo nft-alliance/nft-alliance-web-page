@@ -53,7 +53,7 @@ export const allProjects: Project[] = [
   {
     title: "Arbidudes",
     url: "https://arbidudes.xyz/",
-    description: "Sexy motherfuckers",
+    description: "The cutest dudes in the Metaverse. 10k limited Arbidudes.",
     image: "/arbidudes.png",
     categories: [categories.NFT],
     price: 0.05,
