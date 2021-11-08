@@ -1,4 +1,5 @@
 import React from "react";
+import { categories } from "../constants";
 import { Project } from "../project";
 
 export function ProjectCard({
@@ -15,9 +16,9 @@ export function ProjectCard({
           </a>
         </div>
         <div className="project-description">{project.description}</div>
-        <div className="project-price">
+        {project.categories.includes(categories.NFT) && <div className="project-price">
           Price: {project.price >= 0 ? `${project.price} Ξ` : 'Sold out'}
-        </div>
+        </div>}
         <div className="project-categories">
             {project.categories
                 .map(c => <div className="project-category" key={`${project.title}-${c}`}>{c}</div>)}
@@ -26,6 +27,7 @@ export function ProjectCard({
       <style jsx>{`
         .project {
           padding: 15px;
+          border: 1px solid;
         }
 
         .project-title {
@@ -36,7 +38,7 @@ export function ProjectCard({
         .project-categories {
             display: flex;
             align-items: center;
-
+            margin-top: 15px;
         }
 
         .project-price {

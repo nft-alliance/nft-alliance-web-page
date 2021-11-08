@@ -1,10 +1,19 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { useState } from "react";
 import { Layout } from "../modules/app/components/Layout";
 import { ProjectList } from "../modules/projects/components/ProjectList";
-import { allProjects } from "../modules/projects/constants";
+import { allProjects, categories } from "../modules/projects/constants";
 
 const Home: NextPage = () => {
+  const [categoriesFiltered, setCategoriesFiltered] = useState([categories.NFT, categories.DEFI, categories.MARKETPLACE])
+  
+  const toggleCategory = (category: string) => {
+    setCategoriesFiltered(categoriesFiltered.includes(category) ? categoriesFiltered.filter(i => i !== category) : [...categoriesFiltered, category])
+  }
+
+  const filteredProjects = allProjects.filter(i => i.categories.filter(c => categoriesFiltered.includes(c)).length > 0)
+
   return (
     <div>
       <Layout>
@@ -26,12 +35,22 @@ const Home: NextPage = () => {
               If you are a NFT project founder/builder, you can join our Discord and apply. Note: We will not accept applications from copies of existing projects.
             </p>
             <h3>What will the NFT Alliance do ?</h3>
-            <p>We'll build exclusive products on Arbitrum which leverage the NFT technology. Owning one NFT from each collection member of the alliance will give you access to exclusive content so grab some now.</p>
+            <p>We&apos;ll build exclusive products on Arbitrum which leverage the NFT technology. Owning one NFT from each collection member of the alliance will give you access to exclusive content so grab some now.</p>
           </div>
 
           <div className="projects-wrapper">
             <h3>All projects in the Alliance</h3>
-            <ProjectList projects={allProjects} />
+            <div className="filter-categories">
+              <div className="filter-categories-title">Filter by category</div>
+              <div className="filter-categories-items">
+                <div className={`category ${categoriesFiltered.includes(categories.NFT) ? 'selected' : ''}`} onClick={() => toggleCategory(categories.NFT)}>NFT</div>
+                <div className={`category ${categoriesFiltered.includes(categories.DEFI) ? 'selected' : ''}`} onClick={() => toggleCategory(categories.DEFI)}>DEFI</div>
+
+                <div className={`category ${categoriesFiltered.includes(categories.MARKETPLACE) ? 'selected' : ''}`} onClick={() => toggleCategory(categories.MARKETPLACE)}>MARKETPLACE</div>
+
+              </div>
+            </div>
+            <ProjectList projects={filteredProjects} />
           </div>
         </main>
       </Layout>
@@ -67,6 +86,24 @@ const Home: NextPage = () => {
         .projects-wrapper, .about {
           max-width: 880px;
           margin: 0 auto;
+          width: 100%;
+        }
+
+        .filter-categories-items {
+          display: flex;
+        }
+
+        .category {
+          background: grey;
+          padding: 0 10px;
+          border-radius: 10px;
+          margin-right: 10px;
+          color: white;
+          cursor: pointer;
+        }
+
+        .category.selected {
+          background: black;
         }
       `}</style>
     </div>

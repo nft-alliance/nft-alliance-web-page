@@ -20,13 +20,20 @@ export function ProjectList({
         .project-list {
           display: flex;
           flex-wrap: wrap;
-          align-items: center;
+          align-items: flex-start;
           justify-content: space-between;
+          width: 100%;
         }
 
         .project-wrapper {
             padding: 15px;
             width: 50%;
+        }
+
+        @media only screen and (max-width: 600px) {
+          .project-wrapper {
+            width: 100%;
+          }
         }
       `}</style>
     </div>
