@@ -40,6 +40,7 @@ export function Footer() {
       <style jsx>
         {`
           .footer {
+            color: #FFF;
             width: 75%;
             height: 100px;
             margin: auto;
@@ -55,7 +56,7 @@ export function Footer() {
             padding: 0 10px;
             text-transform: uppercase;
             text-decoration: none;
-            color: black;
+            color: #FFF;
           }
         `}
       </style>

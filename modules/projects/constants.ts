@@ -11,7 +11,7 @@ export const allProjects: Project[] = [
     title: "CastleDAO",
     url: "https://castledao.com",
     description:
-      "A castle is a key to the CastleVerse. 10k Castles, 10k Generals, Fight and Earn",
+      "A castle is a key to the CastleVerse. 10k Castles, 10k Generals, Fight and Earn.",
     image: "/castledao.png",
     categories: [categories.NFT],
     price: 0.05,
@@ -19,7 +19,7 @@ export const allProjects: Project[] = [
   {
     title: "SacredCreatures",
     url: "https://sacredcreatures.xyz",
-    description: "10k unique sacred creatures",
+    description: "Discover 7,000 Unique Sacred Creatures Cards. Join the King's servants journey.",
     image: "/sacred_creatures.png",
     categories: [categories.NFT],
     price: 0.05,
@@ -36,7 +36,7 @@ export const allProjects: Project[] = [
     title: "The Bunny Gang",
     url: "https://www.bunnygang.art/",
     description:
-      "Limited 1332 unique avatar collection. The full Metaverse experience on Arbitrum. Join one of the 4 gangs and start fighting for your territory.",
+      "Limited 1332 unique avatar collection. The full Metaverse experience on Arbitrum.",
     image: "/bunny_gang.png",
     categories: [categories.NFT],
     price: 0.077,
@@ -94,7 +94,7 @@ export const allProjects: Project[] = [
     title: "OutOfOrbit",
     url: "https://outoforbit.art/",
     description:
-      "A new, easy to use NFT marketplace on Arbitrum focused on supporting the Arbitrum NFT community",
+      "A new NFT marketplace on Arbitrum focused on supporting the Arbitrum NFT community",
     image: "/outoforbit.jpeg",
     categories: [categories.MARKETPLACE],
     price: 0,
