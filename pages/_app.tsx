@@ -13,11 +13,12 @@ function App({ Component, pageProps }: AppProps) {
       />
       <Component {...pageProps} />
       <style jsx global>{`
+        @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
         :root {
           --gap: 16pt;
-          --page-background-color: white;
+          --page-background-color: #000910;
           --alt-background-color: grey;
-          --text-main-color: black;
+          --text-main-color: #fff;
           --text-secondary-color: grey;
 
           --z-index-modal: 1000;
@@ -36,9 +37,11 @@ function App({ Component, pageProps }: AppProps) {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+        }
+
+        ::selection {
+          color: #000;
+          background: #FFF;
         }
 
         a {
@@ -46,8 +49,27 @@ function App({ Component, pageProps }: AppProps) {
           text-decoration: none;
         }
 
+        button {
+          cursor: pointer;
+          font-family: inherit;
+          font-weight: 600;
+          border: 1px solid var(--text-main-color);
+          font-size: 16px;
+          padding: 8px 16px;
+          transition: background-color 0.35s ease-out, color 0.35s ease-out;
+        }
+
+        button:hover {
+          background: var(--page-background-color);
+          color: var(--text-main-color);
+        }
+
         * {
           box-sizing: border-box;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          margin: 0;
+          padding: 0;
         }
 
         body {
@@ -60,18 +82,13 @@ function App({ Component, pageProps }: AppProps) {
           line-height: 1.8;
           color: var(--text-main-color);
           background: var(--page-background-color);
-          font-family: Atari, -apple-system, BlinkMacSystemFont, Segoe UI,
-            Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-            Helvetica Neue, sans-serif;
+          font-family: "Space Mono", monospace;
         }
 
         @media only screen and (max-width: 600px) {
           body {
             font-size: 13px;
           }
-        }
-        a {
-          color: blueviolet;
         }
         h1 {
           font-weight: 700;

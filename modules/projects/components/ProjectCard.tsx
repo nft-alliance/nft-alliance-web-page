@@ -19,63 +19,89 @@ export function ProjectCard({
         </div>
 
         {project.image && (
-          <div className="project-image">
-            <Image
-              src={project.image}
-              width="100"
-              height="100"
-              layout="responsive"
-              alt={`${project.title}-image`}
-            />
-          </div>
+          <a href={project.url} target="_blank" rel="noreferrer">
+            <div className="project-image">
+              <Image
+                src={project.image}
+                width="100"
+                height="100"
+                layout="responsive"
+                alt={`${project.title}-image`}
+              />
+            </div>
+          </a>
         )}
 
         <div className="project-description">{project.description}</div>
-        {project.categories.includes(categories.NFT) && (
-          <div className="project-price">
-            Price: {project.price >= 0 ? `${project.price} Ξ` : "Sold out"}
-          </div>
-        )}
+
         <div className="project-categories">
-          {project.categories.map((c) => (
-            <div className="project-category" key={`${project.title}-${c}`}>
-              {c}
+          <div className="tags">
+            {project.categories.map((c) => (
+              <div className="project-category" key={`${project.title}-${c}`}>
+                {c}
+              </div>
+            ))}
+          </div>
+          {project.categories.includes(categories.NFT) && (
+            <div className="project-price">
+              Price: {project.price >= 0 ? `${project.price} Ξ` : "Sold out"}
             </div>
-          ))}
+          )}
         </div>
       </div>
       <style jsx>{`
         .project {
-          padding: 15px;
-          border: 1px solid;
+          box-shadow: 8px 8px 0px rgba(255, 255, 255, 0.15);
+          display: flex;
+          flex-flow: column;
+          padding: 16px;
+          min-height: 560px;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          transition: box-shadow 0.25s ease-out, transform 0.25s ease-out;
+        }
+
+        .project:hover {
+          box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.15);
+          transform: translate(8px, 8px);
         }
 
         .project-title {
+          font-size: 24px;
           font-weight: bold;
           margin-bottom: 15px;
+          text-align: left;
+        }
+
+        .tags{
+          align-items: center;
+          display: flex;
         }
 
         .project-image {
-          margin-bottom: 15px;
-          padding: 0 16px 0 16px;
+          border-radius: 16px;
+          overflow: hidden;
+          margin-bottom: 24px;
         }
 
         .project-categories {
-          display: flex;
           align-items: center;
-          margin-top: 15px;
+          display: flex;
+          margin-top: auto;
+          justify-content: space-between;
         }
 
         .project-price {
-          margin: 15px 0;
           font-weight: bold;
         }
 
         .project-category {
           border-radius: 10px;
-          padding: 0 10px;
+          padding: 2px 8px;
+          font-size: 14px;
+          font-weight: 600;
           background: grey;
-          margin-right: 15px;
+          margin-right: 16px;
+          text-transform: uppercase;
           color: white;
         }
       `}</style>

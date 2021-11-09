@@ -26,8 +26,8 @@ export function ProjectList({
         }
 
         .project-wrapper {
-            padding: 15px;
-            width: 50%;
+            margin-bottom: 64px;
+            width: calc(50% - 32px);
         }
 
         @media only screen and (max-width: 600px) {
