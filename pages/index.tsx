@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Layout } from "../modules/app/components/Layout";
 import { ProjectList } from "../modules/projects/components/ProjectList";
 import { allProjects, categories } from "../modules/projects/constants";
+import { Button } from "../modules/app/components/Button";
 
 const Home: NextPage = () => {
   const [categoriesFiltered, setCategoriesFiltered] = useState([
@@ -29,24 +30,7 @@ const Home: NextPage = () => {
     <div>
       <Layout>
         <main className="main">
-          <header>
-            <strong className="logo">NFT Alliance</strong>
-            <nav>
-              <ul>
-                <li>
-                  <Link href="#">Home</Link>
-                </li>
-                <li>
-                  <Link href="#">About</Link>
-                </li>
-                <li>
-                  <Link href="#">FAQs</Link>
-                </li>
-              </ul>
-            </nav>
-            <button>Apply now</button>
-          </header>
-          <section className="hero">
+          <section className="hero" id="home">
             <div className="container">
               <div className="hero-content">
                 <h1 className="title appear d025">
@@ -60,8 +44,13 @@ const Home: NextPage = () => {
                   the Arbitrum ecosystem.
                 </h2>
                 <div className="cta appear d075">
-                  <button className="">Join the Alliance</button>
-                  <a href="#" className="inline">
+                  <a
+                    title="Join discord"
+                    href="https://discord.gg/eX9eXDu4tu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ><Button>Join the Alliance</Button></a>
+                  <a href="#about" className="inline">
                     Explore more
                   </a>
                 </div>
@@ -69,21 +58,21 @@ const Home: NextPage = () => {
             </div>
             <div className="hero-info appear d1">
               <div className="hero-info-unit">
-                <strong>12</strong>
+                <strong>{allProjects.filter(i => i.categories.includes(categories.NFT)).length}</strong>
                 <p>NFTs Projects</p>
               </div>
               <div className="hero-info-unit">
-                <strong>08</strong>
+                <strong>{allProjects.filter(i => i.categories.includes(categories.DEFI)).length}</strong>
                 <p>DeFi Projects</p>
               </div>
               <div className="hero-info-unit">
-                <strong>02</strong>
+                <strong>{allProjects.filter(i => i.categories.includes(categories.MARKETPLACE)).length}</strong>
                 <p>Marketplaces</p>
               </div>
             </div>
           </section>
 
-          <div className="about">
+          <div className="about" id="about">
             <div className="about-section">
               <h3>What is the NFT Alliance?</h3>
               <p>
@@ -111,38 +100,35 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="projects-wrapper">
+          <div className="projects-wrapper" id="projects">
             <h3>All projects in the Alliance</h3>
             <div className="filter-categories">
               <div className="filter-categories-title">Filter by category</div>
               <div className="filter-categories-items">
                 <div
-                  className={`category ${
-                    categoriesFiltered.includes(categories.NFT)
-                      ? "selected"
-                      : ""
-                  }`}
+                  className={`category ${categoriesFiltered.includes(categories.NFT)
+                    ? "selected"
+                    : ""
+                    }`}
                   onClick={() => toggleCategory(categories.NFT)}
                 >
                   NFT
                 </div>
                 <div
-                  className={`category ${
-                    categoriesFiltered.includes(categories.DEFI)
-                      ? "selected"
-                      : ""
-                  }`}
+                  className={`category ${categoriesFiltered.includes(categories.DEFI)
+                    ? "selected"
+                    : ""
+                    }`}
                   onClick={() => toggleCategory(categories.DEFI)}
                 >
                   DEFI
                 </div>
 
                 <div
-                  className={`category ${
-                    categoriesFiltered.includes(categories.MARKETPLACE)
-                      ? "selected"
-                      : ""
-                  }`}
+                  className={`category ${categoriesFiltered.includes(categories.MARKETPLACE)
+                    ? "selected"
+                    : ""
+                    }`}
                   onClick={() => toggleCategory(categories.MARKETPLACE)}
                 >
                   MARKETPLACE
@@ -154,6 +140,9 @@ const Home: NextPage = () => {
         </main>
       </Layout>
       <style jsx>{`
+        .main {
+          padding: 30px;
+        }
         .appear{
           animation: appear 0.35s ease-out forwards;
           transform: translateY(25%);
@@ -177,33 +166,7 @@ const Home: NextPage = () => {
             transform: translateY(0);
           }
         }
-        header{
-          align-items: center;
-          background: var(--page-background-color);
-          background: rgba(0,9,16,0.8);
-          backdrop-filter: blur(4px);
-          border: 1px solid rgba(255,255,255,0.1);
-          color: var(--text-main-color);
-          display: flex;
-          justify-content: space-between;
-          padding: 16px 24px;
-          top: 8px;
-          position: fixed;
-          width: 100%;
-          max-width: 720px;
-          left: 50%;
-          transform: translateX(-50%);
-          z-index: 2;
-        }
-
-        header nav ul{
-          display: flex;
-        }
-
-        header nav ul li{
-          list-style: none;
-          padding: 0 16px;
-        }
+        
 
         .hero {
           color: var(--text-main-color);
@@ -316,6 +279,7 @@ const Home: NextPage = () => {
           margin: 0 auto;
           max-width: 720px;
           width: 100%;
+          flex-wrap: wrap;
         }
 
         .hero-info-unit{
@@ -349,6 +313,17 @@ const Home: NextPage = () => {
           text-transform: uppercase;
           font-weight: 600;
           letter-spacing: 1px;
+        }
+
+        @media all and (max-width: 650px) {
+          .hero-content .title {
+            font-size: 30px;
+            line-height: 1;
+          }
+
+          .hero-info {
+            flex-direction: column;
+          }
         }
 
         .cta a{

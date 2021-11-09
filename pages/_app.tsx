@@ -49,20 +49,7 @@ function App({ Component, pageProps }: AppProps) {
           text-decoration: none;
         }
 
-        button {
-          cursor: pointer;
-          font-family: inherit;
-          font-weight: 600;
-          border: 1px solid var(--text-main-color);
-          font-size: 16px;
-          padding: 8px 16px;
-          transition: background-color 0.35s ease-out, color 0.35s ease-out;
-        }
-
-        button:hover {
-          background: var(--page-background-color);
-          color: var(--text-main-color);
-        }
+        
 
         * {
           box-sizing: border-box;
