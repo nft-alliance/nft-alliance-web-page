@@ -115,4 +115,12 @@ export const allProjects: Project[] = [
     categories: [categories.NFT],
     price: 0.05,
   },
+  {
+    title: "Random Walk NFT",
+    url: "https://randomwalknft.com/",
+    description: "A social experiment with generative NFTs",
+    image: "/randomwalk.png",
+    categories: [categories.NFT],
+    price: "Variable",
+  }
 ];
