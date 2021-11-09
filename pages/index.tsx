@@ -141,7 +141,12 @@ const Home: NextPage = () => {
       </Layout>
       <style jsx>{`
         .main {
-          padding: 30px;
+          padding: 0;
+        }
+        @media all and (max-width: 760px){
+          .main{
+            padding: 24px;
+          }
         }
         .appear{
           animation: appear 0.35s ease-out forwards;
@@ -178,6 +183,12 @@ const Home: NextPage = () => {
           overflow: hidden;
           position: relative;
           min-height: 100vh;
+        }
+
+        @media all and (max-width: 760px){
+          .hero{
+             padding: 120px 0 0;
+          }
         }
 
         .hero:before, .hero:after{
@@ -317,7 +328,7 @@ const Home: NextPage = () => {
 
         @media all and (max-width: 650px) {
           .hero-content .title {
-            font-size: 30px;
+            font-size: 42px;
             line-height: 1;
           }
 
