@@ -222,7 +222,7 @@ const Home: NextPage = () => {
           border: 3px dashed #7514fc8f;
           border-radius: 50%;
           bottom: 0;
-          content: '';
+          //content: '';
           height: 30vw;
           position: fixed;
           transform: translate(20%, 50%);
