@@ -107,4 +107,12 @@ export const allProjects: Project[] = [
     categories: [categories.MARKETPLACE],
     price: 0,
   },
+  {
+    title: "Footy Nouns",
+    url: "https://www.footynouns.wtf/",
+    description: "Footy Nouns are nouns who like football",
+    image: "/footy.gif",
+    categories: [categories.NFT],
+    price: 0.05,
+  },
 ];
