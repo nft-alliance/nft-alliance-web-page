@@ -291,7 +291,7 @@ const Home: NextPage = () => {
           margin: 0;
           position: relative;
           flex-flow: column;
-          width: 100%;
+          flex: 1;
           z-index: 1;
         }
 
@@ -323,6 +323,10 @@ const Home: NextPage = () => {
 
           .hero-info {
             flex-direction: column;
+          }
+
+          .hero-info-unit {
+            width: 100%;
           }
         }
 
