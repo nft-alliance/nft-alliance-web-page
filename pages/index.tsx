@@ -49,7 +49,9 @@ const Home: NextPage = () => {
                     href="https://discord.gg/eX9eXDu4tu"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ><Button>Join the Alliance</Button></a>
+                  >
+                    <Button>Join the Alliance</Button>
+                  </a>
                   <a href="#about" className="inline">
                     Explore more
                   </a>
@@ -58,15 +60,33 @@ const Home: NextPage = () => {
             </div>
             <div className="hero-info appear d1">
               <div className="hero-info-unit">
-                <strong>{allProjects.filter(i => i.categories.includes(categories.NFT)).length}</strong>
+                <strong>
+                  {
+                    allProjects.filter((i) =>
+                      i.categories.includes(categories.NFT)
+                    ).length
+                  }
+                </strong>
                 <p>NFTs Projects</p>
               </div>
               <div className="hero-info-unit">
-                <strong>{allProjects.filter(i => i.categories.includes(categories.DEFI)).length}</strong>
+                <strong>
+                  {
+                    allProjects.filter((i) =>
+                      i.categories.includes(categories.DEFI)
+                    ).length
+                  }
+                </strong>
                 <p>DeFi Projects</p>
               </div>
               <div className="hero-info-unit">
-                <strong>{allProjects.filter(i => i.categories.includes(categories.MARKETPLACE)).length}</strong>
+                <strong>
+                  {
+                    allProjects.filter((i) =>
+                      i.categories.includes(categories.MARKETPLACE)
+                    ).length
+                  }
+                </strong>
                 <p>Marketplaces</p>
               </div>
             </div>
@@ -74,61 +94,72 @@ const Home: NextPage = () => {
 
           <div className="about" id="about">
             <div className="about-section">
-              <h3>What is the NFT Alliance?</h3>
-              <p>
-                The NFT Alliance is a working group formed by different NFT
-                projects which aim to join efforts to grow our communities and
-                the NFT ecosystem.
-              </p>
+              <strong>01</strong>
+              <div className="content">
+                <h3>What is the NFT Alliance?</h3>
+                <p>
+                  The NFT Alliance is a working group formed by different NFT
+                  projects which aim to join efforts to grow our communities and
+                  the NFT ecosystem.
+                </p>
+              </div>
             </div>
             <div className="about-section">
-              <h3>How can I join the NFT Alliance?</h3>
-              <p>
-                If you are a NFT project founder/builder, you can join our
-                Discord and apply. Note: We will not accept applications from
-                copies of existing projects.
-              </p>
+              <strong>02</strong>
+              <div className="content">
+                <h3>How can I join the NFT Alliance?</h3>
+                <p>
+                  If you are a NFT project founder/builder, you can join our
+                  Discord and apply. Note: We will not accept applications from
+                  copies of existing projects.
+                </p>
+              </div>
             </div>
             <div className="about-section">
-              <h3>What will the NFT Alliance do ?</h3>
-              <p>
-                We&apos;ll build exclusive products on Arbitrum which leverage
-                the NFT technology. Owning one NFT from each collection member
-                of the alliance will give you access to exclusive content so
-                grab some now.
-              </p>
+              <strong>03</strong>
+              <div className="content">
+                <h3>What will the NFT Alliance do ?</h3>
+                <p>
+                  We&apos;ll build exclusive products on Arbitrum which leverage
+                  the NFT technology. Owning one NFT from each collection member
+                  of the alliance will give you access to exclusive content so
+                  grab some now.
+                </p>
+              </div>
             </div>
           </div>
 
           <div className="projects-wrapper" id="projects">
-            <h3>All projects in the Alliance</h3>
+            <h3>All Alliance Projects</h3>
             <div className="filter-categories">
-              <div className="filter-categories-title">Filter by category</div>
               <div className="filter-categories-items">
                 <div
-                  className={`category ${categoriesFiltered.includes(categories.NFT)
-                    ? "selected"
-                    : ""
-                    }`}
+                  className={`category ${
+                    categoriesFiltered.includes(categories.NFT)
+                      ? "selected"
+                      : ""
+                  }`}
                   onClick={() => toggleCategory(categories.NFT)}
                 >
                   NFT
                 </div>
                 <div
-                  className={`category ${categoriesFiltered.includes(categories.DEFI)
-                    ? "selected"
-                    : ""
-                    }`}
+                  className={`category ${
+                    categoriesFiltered.includes(categories.DEFI)
+                      ? "selected"
+                      : ""
+                  }`}
                   onClick={() => toggleCategory(categories.DEFI)}
                 >
                   DEFI
                 </div>
 
                 <div
-                  className={`category ${categoriesFiltered.includes(categories.MARKETPLACE)
-                    ? "selected"
-                    : ""
-                    }`}
+                  className={`category ${
+                    categoriesFiltered.includes(categories.MARKETPLACE)
+                      ? "selected"
+                      : ""
+                  }`}
                   onClick={() => toggleCategory(categories.MARKETPLACE)}
                 >
                   MARKETPLACE
@@ -296,7 +327,6 @@ const Home: NextPage = () => {
         .hero-info-unit{
           align-items: center;
           border: 1px solid rgba(255,255,255,0.1);
-          border-bottom: 0;
           display: flex;
           padding: 16px 24px;
           margin: 0;
@@ -342,7 +372,7 @@ const Home: NextPage = () => {
         }
 
         .cta a{
-          margin-left: 24px;
+          margin-right: 24px;
         }
 
         .main{
@@ -369,7 +399,8 @@ const Home: NextPage = () => {
         }
 
         .filter-categories{
-          margin-bottom: 80px;
+          display: flex;
+          margin: 16px 0 80px;
         }
 
         .filter-categories-items {
@@ -378,15 +409,45 @@ const Home: NextPage = () => {
 
         .category {
           background: grey;
-          padding: 0 10px;
+          padding: 2px 16px;
           border-radius: 10px;
+          font-weight: 600;
           margin-right: 10px;
           color: white;
           cursor: pointer;
         }
 
         .about-section{
-          margin: 80px 0;
+          align-items: center;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
+          display: flex;
+          padding: 40px 0;
+          justify-content: space-between;
+        }
+
+        .about-section strong{
+          font-size: 24px;
+        }
+
+        .about-section .content{
+          width: 70%;
+        }
+
+        @media all and (max-width: 760px){
+          .about-section{
+            align-items: flex-start;
+            flex-flow: column;
+          }
+
+          .about-section .content{
+            width: 100%;
+          }
+        }
+
+        .about-section .content h3{
+          display: block;
+          font-size: 21px;
+          margin-bottom: 24px;
         }
 
         .category.selected {

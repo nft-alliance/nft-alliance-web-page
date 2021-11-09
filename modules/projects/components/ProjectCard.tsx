@@ -81,6 +81,14 @@ export function ProjectCard({
           margin-bottom: 24px;
         }
 
+        @media all and (max-width: 600px){
+          .project-image img{
+            display: block;
+            margin: 0 auto;
+            max-width: 420px;
+          }
+        }
+
         .project-categories {
           align-items: center;
           display: flex;

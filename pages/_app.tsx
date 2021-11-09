@@ -37,6 +37,7 @@ function App({ Component, pageProps }: AppProps) {
         body {
           padding: 0;
           margin: 0;
+          scroll-behavior: smooth;
         }
 
         ::selection {

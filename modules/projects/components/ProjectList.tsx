@@ -32,7 +32,8 @@ export function ProjectList({
 
         @media only screen and (max-width: 600px) {
           .project-wrapper {
-            width: 100%;
+            margin: 0 auto 40px;
+            width: 80%;
           }
         }
       `}</style>
