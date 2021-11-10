@@ -2,16 +2,16 @@ import Link from 'next/link'
 
 export function Footer() {
   return (
-    <div>
+    <div className="footer-wr">
       <div className="footer">
-        {/* <a
-          href="https://twitter.com/NFTAlliance"
+        <a
+          href="https://twitter.com/arbNFTAlliance"
           target="_blank"
           rel="noopener noreferrer"
           title="Twitter account"
         >
           👉 Twitter
-        </a> */}
+        </a>
 
        
 
@@ -39,12 +39,17 @@ export function Footer() {
       </div>
       <style jsx>
         {`
+
+          .footer-wr{
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 80px;
+            padding: 40px 0;
+          }
           .footer {
             color: #FFF;
-            width: 75%;
-            height: 100px;
+            width: 100%;
             margin: auto;
-            padding: 30px;
+            padding: 0 24px;
             display: flex;
             justify-content: center;
             align-items: center;

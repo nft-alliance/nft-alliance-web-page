@@ -190,29 +190,6 @@ const Home: NextPage = () => {
             padding: 24px;
           }
         }
-        .appear{
-          animation: appear 0.35s ease-out forwards;
-          transform: translateY(25%);
-          opacity: 0;
-        }
-        .appear.d025{
-          animation-delay: 0.25s;
-        }
-        .appear.d05{
-          animation-delay: 0.5s;
-        }
-        .appear.d075{
-          animation-delay: 0.75s;
-        }
-        .appear.d1{
-          animation-delay: 1s;
-        }
-        @keyframes appear{
-          to{
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
         
 
         .hero {
