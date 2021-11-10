@@ -42,13 +42,12 @@ export function Footer() {
 
           .footer-wr{
             border-top: 1px solid rgba(255,255,255,0.1);
-            margin-top: 80px;
+            margin-top: 120px;
             padding: 40px 0;
           }
           .footer {
             color: #FFF;
             width: 100%;
-            margin: auto;
             padding: 0 24px;
             display: flex;
             justify-content: center;

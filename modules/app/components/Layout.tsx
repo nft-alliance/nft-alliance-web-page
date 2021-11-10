@@ -10,7 +10,7 @@ export const Layout: NextPage = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div>
+    <div className="nft-alliance">
       <Head>
         <title>NFT Alliance</title>
         <meta name="description" content="NFT Alliance" />
@@ -20,6 +20,9 @@ export const Layout: NextPage = ({
       <div className="content">{children}</div>
       <Footer />
       <style jsx>{`
+        .nft-alliance {
+          min-height: 100vh;
+        }
         .container {
           padding: 0 2rem;
         }
