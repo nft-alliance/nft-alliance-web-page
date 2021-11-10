@@ -12,6 +12,7 @@ const Home: NextPage = () => {
     categories.NFT,
     categories.DEFI,
     categories.MARKETPLACE,
+    categories.GAMING
   ]);
 
   const toggleCategory = (category: string) => {
@@ -163,6 +164,16 @@ const Home: NextPage = () => {
                   onClick={() => toggleCategory(categories.MARKETPLACE)}
                 >
                   MARKETPLACE
+                </div>
+                <div
+                  className={`category ${
+                    categoriesFiltered.includes(categories.GAMING)
+                      ? "selected"
+                      : ""
+                  }`}
+                  onClick={() => toggleCategory(categories.GAMING)}
+                >
+                  GAMING
                 </div>
               </div>
             </div>

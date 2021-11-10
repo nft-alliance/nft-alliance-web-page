@@ -14,7 +14,7 @@ export const allProjects: Project[] = [
     description:
       "A castle is a key to the CastleVerse. 10k Castles, 10k Generals, Fight and Earn.",
     image: "/castledao.png",
-    categories: [categories.NFT],
+    categories: [categories.NFT, categories.GAMING],
     price: 0.05,
   },
   {
@@ -121,7 +121,7 @@ export const allProjects: Project[] = [
     title: "Random Walk NFT",
     url: "https://randomwalknft.com/",
     description: "A social experiment with generative NFTs",
-    image: "/randomwalk.png",
+    image: "/randomwalk.jpg",
     categories: [categories.NFT],
     price: "Variable",
   },
