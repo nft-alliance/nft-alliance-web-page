@@ -9,13 +9,16 @@ export function Header() {
         <nav>
           <ul>
             <li>
-              <Link href="#home">Home</Link>
+              <Link href="/#home">Home</Link>
             </li>
             <li>
-              <Link href="#about">About</Link>
+              <Link href="/#about">About</Link>
             </li>
             <li>
-              <Link href="#projects">Projects</Link>
+              <Link href="/#projects">Projects</Link>
+            </li>
+            <li>
+              <Link href="/develop">Developers</Link>
             </li>
           </ul>
         </nav>
