@@ -51,7 +51,7 @@ function App({ Component, pageProps }: AppProps) {
 
         a {
           color: inherit;
-          text-decoration: none;
+          text-decoration: underline;
         }
 
         
