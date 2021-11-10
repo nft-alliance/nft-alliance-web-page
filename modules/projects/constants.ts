@@ -2,6 +2,7 @@ import { Project } from "./project";
 
 export const categories = {
   NFT: "nft",
+  GAMING: "gaming",
   DEFI: "defi",
   PONZI: "ponzi",
   MARKETPLACE: "marketplace",
@@ -19,17 +20,18 @@ export const allProjects: Project[] = [
   {
     title: "SacredCreatures",
     url: "https://sacredcreatures.xyz",
-    description: "Discover 7,000 Unique Sacred Creatures Cards. Join the King's servants journey.",
+    description:
+      "Discover 7,000 Unique Sacred Creatures Cards. Join the King's servants journey.",
     image: "/sacred_creatures.png",
     categories: [categories.NFT],
     price: 0.05,
   },
   {
-    title: "RealmDAO",
+    title: "Realm",
     url: "https://www.rlm.land/",
-    description: "Collect, build, explore, trade and fight your way to victory",
+    description: "Battle for the Metaverse begins now. Play-to-Earn Gaming.",
     image: "/realm.jpeg",
-    categories: [categories.NFT],
+    categories: [categories.GAMING, categories.NFT],
     price: 0.02,
   },
   {
@@ -122,5 +124,5 @@ export const allProjects: Project[] = [
     image: "/randomwalk.png",
     categories: [categories.NFT],
     price: "Variable",
-  }
+  },
 ];
