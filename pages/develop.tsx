@@ -25,7 +25,7 @@ const Develop: NextPage = () => {
             <a href="https://github.com/nft-alliance/nft-boilerplate">
               NFT boilerplate
             </a>{" "}
-            that you an use to launch your smartcontract. You will also find a{" "}
+            that you can use to launch your smartcontract. You will also find a{" "}
             <a href="https://github.com/nft-alliance/nft-landing-boilerplate">
               Website Boilerplate
             </a>{" "}
@@ -40,11 +40,11 @@ const Develop: NextPage = () => {
           margin: 0 auto;
         }
 
-        .title{
+        .title {
           font-size: 36px;
         }
 
-        h2{
+        h2 {
           font-size: 24px;
           margin: 40px 0 16px;
         }
