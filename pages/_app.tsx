@@ -40,6 +40,10 @@ function App({ Component, pageProps }: AppProps) {
           scroll-behavior: smooth;
         }
 
+        ::-webkit-scrollbar {
+          display: none;
+        }
+
         ::selection {
           color: #000;
           background: #FFF;
