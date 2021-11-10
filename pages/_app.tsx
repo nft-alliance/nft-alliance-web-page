@@ -54,6 +54,10 @@ function App({ Component, pageProps }: AppProps) {
           text-decoration: none;
         }
 
+        p a {
+          text-decoration: underline;
+        }
+
         
 
         * {
