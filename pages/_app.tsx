@@ -87,6 +87,7 @@ function App({ Component, pageProps }: AppProps) {
           transform: translateY(25%);
           opacity: 0;
         }
+        
         .appear.d025{
           animation-delay: 0.25s;
         }
@@ -99,6 +100,15 @@ function App({ Component, pageProps }: AppProps) {
         .appear.d1{
           animation-delay: 1s;
         }
+
+        .appear.d125{
+          animation-delay: 1.25s;
+        }
+
+        .appear.d150{
+          animation-delay: 1.5s;
+        }
+
         @keyframes appear{
           to{
             opacity: 1;
