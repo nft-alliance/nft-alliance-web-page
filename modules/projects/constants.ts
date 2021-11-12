@@ -112,10 +112,10 @@ export const allProjects: Project[] = [
   {
     title: "Footy Nouns",
     url: "https://www.footynouns.wtf/",
-    description: "Footy Nouns are nouns who like football",
+    description: "Footy Nouns are nouns who live entirely on-chain and enjoy football ⚽️🏆",
     image: "/footy.gif",
     categories: [categories.NFT],
-    price: 0.05,
+    price: 0.03,
   },
   {
     title: "Random Walk NFT",
