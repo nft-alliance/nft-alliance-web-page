@@ -13,10 +13,10 @@ const Develop: NextPage = () => {
             Arbitrum has it&apos;s own testnet (chain id: 421611) that you can
             add here:{" "}
             <a href="https://chainlist.org/">https://chainlist.org/</a>.
-            transactions can be visualized through{" "}
+            Transactions can be visualized through{" "}
             <a href="https://testnet.arbiscan.io/">
               https://testnet.arbiscan.io/
-            </a>
+            </a>.
           </p>
 
           <h2 className="appear d075">NFT Boilerplate</h2>
@@ -30,6 +30,14 @@ const Develop: NextPage = () => {
               Website Boilerplate
             </a>{" "}
             to allow to mint NFTs.{" "}
+          </p>
+
+          <h2 className="appear d125">Arbitrum Documentation</h2>
+          <p className="appear d150">
+            Looking for information for developing on Arbitrum? The official documentation can be found {" "}
+            <a href="https://developer.offchainlabs.com/docs/inside_arbitrum">
+              here
+            </a>.
           </p>
         </main>
       </Layout>
