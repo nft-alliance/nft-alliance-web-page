@@ -6,6 +6,7 @@ export const categories = {
   DEFI: "defi",
   PONZI: "ponzi",
   MARKETPLACE: "marketplace",
+  LOTTERY: "lottery"
 };
 export const allProjects: Project[] = [
   {
@@ -125,4 +126,13 @@ export const allProjects: Project[] = [
     categories: [categories.NFT],
     price: "Variable",
   },
+  {
+    title: "Punk'n Punks",
+    url: "https://punknpunks.com/",
+    description: "Punk inception comes to life with Punk'n Punks.\
+                  Also enjoy the chance to win some ETH.",
+    image: "/punknpunks.png",
+    categories: [categories.NFT, categories.LOTTERY],
+    price: 0.01
+  }
 ];
