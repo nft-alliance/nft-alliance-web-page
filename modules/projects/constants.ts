@@ -134,5 +134,13 @@ export const allProjects: Project[] = [
     image: "/punknpunks.png",
     categories: [categories.NFT, categories.LOTTERY],
     price: 0.01
+  },
+  {
+    title: "Skull Being Club",
+    url: "https://skullbeingclub.com/",
+    description: "$kull ₿eing Club is a collection of 6,000 generative portraits",
+    image: "/skull-content.gif",
+    categories: [categories.NFT],
+    price: 0.05
   }
 ];
