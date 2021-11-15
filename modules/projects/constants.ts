@@ -6,7 +6,7 @@ export const categories = {
   DEFI: "defi",
   PONZI: "ponzi",
   MARKETPLACE: "marketplace",
-  LOTTERY: "lottery"
+  LOTTERY: "lottery",
 };
 export const allProjects: Project[] = [
   {
@@ -113,7 +113,8 @@ export const allProjects: Project[] = [
   {
     title: "Footy Nouns",
     url: "https://www.footynouns.wtf/",
-    description: "Footy Nouns are nouns who live entirely on-chain and enjoy football ⚽️🏆",
+    description:
+      "Footy Nouns are nouns who live entirely on-chain and enjoy football ⚽️🏆",
     image: "/footy.gif",
     categories: [categories.NFT],
     price: 0.03,
@@ -129,10 +130,20 @@ export const allProjects: Project[] = [
   {
     title: "Punk'n Punks",
     url: "https://punknpunks.com/",
-    description: "Punk inception comes to life with Punk'n Punks.\
+    description:
+      "Punk inception comes to life with Punk'n Punks.\
                   Also enjoy the chance to win some ETH.",
     image: "/punknpunks.png",
     categories: [categories.NFT, categories.LOTTERY],
-    price: 0.01
-  }
+    price: 0.01,
+  },
+  {
+    title: "Minionz",
+    url: "https://twitter.com/MinionzNFT",
+    image: "/minionz.png",
+    categories: [categories.NFT],
+    price: 0.0333,
+    description:
+      "8,888 intelligent hexapeds. All traits are generated on-chain and images are dynamically created in the smart contract using a novel layering approach. Site coming soon.",
+  },
 ];
