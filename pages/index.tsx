@@ -175,6 +175,16 @@ const Home: NextPage = () => {
                 >
                   GAMING
                 </div>
+                <div
+                  className={`category ${
+                    categoriesFiltered.includes(categories.LOTTERY)
+                      ? "selected"
+                      : ""
+                  }`}
+                  onClick={() => toggleCategory(categories.LOTTERY)}
+                >
+                  LOTTERY
+                </div>
               </div>
             </div>
             <ProjectList projects={filteredProjects} />
