@@ -135,6 +135,16 @@ export const allProjects: Project[] = [
                   Also enjoy the chance to win some ETH.",
     image: "/punknpunks.png",
     categories: [categories.NFT, categories.LOTTERY],
+    price: 0.01
+  },
+  {
+    title: "Skull Being Club",
+    url: "https://skullbeingclub.com/",
+    description: "$kull ₿eing Club is a collection of 6,000 generative portraits",
+    image: "/skull-content.gif",
+    categories: [categories.NFT],
+    price: 0.05
+  }
     price: 0.01,
   },
   {
