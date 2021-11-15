@@ -143,9 +143,7 @@ export const allProjects: Project[] = [
     description: "$kull ₿eing Club is a collection of 6,000 generative portraits",
     image: "/skull-content.gif",
     categories: [categories.NFT],
-    price: 0.05
-  }
-    price: 0.01,
+    price: 0.05,
   },
   {
     title: "Minionz",
@@ -154,6 +152,6 @@ export const allProjects: Project[] = [
     categories: [categories.NFT],
     price: 0.0333,
     description:
-      "8,888 intelligent hexapeds. All traits are generated on-chain and images are dynamically created in the smart contract using a novel layering approach. Site coming soon.",
+      "8,888 intelligent hexapeds. On-chain generated traits. Images are dynamically created in the smart contract using a novel layering approach.",
   },
 ];
