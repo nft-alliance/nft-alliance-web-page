@@ -6,6 +6,7 @@ import { Layout } from "../modules/app/components/Layout";
 import { ProjectList } from "../modules/projects/components/ProjectList";
 import { allProjects, categories } from "../modules/projects/constants";
 import { Button } from "../modules/app/components/Button";
+import CollaborationList from "../modules/collaborations/components/CollaborationsList";
 
 const Home: NextPage = () => {
   const [categoriesFiltered, setCategoriesFiltered] = useState([
@@ -188,6 +189,8 @@ const Home: NextPage = () => {
               </div>
             </div>
             <ProjectList projects={filteredProjects} />
+
+            <CollaborationList />
           </div>
         </main>
       </Layout>
