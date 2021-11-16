@@ -154,4 +154,13 @@ export const allProjects: Project[] = [
     description:
       "8,888 intelligent hexapeds. On-chain generated traits. Images are dynamically created in the smart contract using a novel layering approach.",
   },
+  {
+    title: "dGenesis",
+    url: "https://dgenesis.io",
+    image: "/dgenesis.jpg",
+    categories: [categories.NFT],
+    price: 0.05,
+    description:
+      "dGenesis is a platform aiming to create the finest collections of generative art while leveraging the Ethereum and Arbitrum eosystems.",
+  },
 ];
