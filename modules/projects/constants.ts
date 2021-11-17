@@ -89,7 +89,7 @@ export const allProjects: Project[] = [
     title: "FarmLand",
     url: "https://farmland-game.github.io/",
     description: "A play to earn DeFI + NFT farm",
-    image: "/farmland.png",
+    image: "/farmland.gif",
     categories: [categories.NFT, categories.DEFI],
     price: 0,
   },
