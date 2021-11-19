@@ -166,7 +166,7 @@ export const allProjects: Project[] = [
   {
     title: "OpenBlox",
     url: "https://openblox.io",
-    image: "/openblox.jpg",
+    image: "/openblox.png",
     categories: [categories.NFT],
     price: 0.3,
     description:
