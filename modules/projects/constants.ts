@@ -94,6 +94,15 @@ export const allProjects: Project[] = [
     price: 0,
   },
   {
+    title: "Arbazaar",
+    url: "https://arbazaar.io/",
+    description:
+      "An Arbitrum-native NFT marketplace with minting, staking, and support for all collections",
+    image: "/arbazaar.png",
+    categories: [categories.MARKETPLACE],
+    price: 0,
+  },
+  {
     title: "OutOfOrbit",
     url: "https://outoforbit.art/",
     description:
