@@ -163,4 +163,13 @@ export const allProjects: Project[] = [
     description:
       "dGenesis is a platform aiming to create the finest collections of generative art while leveraging the Ethereum and Arbitrum eosystems.",
   },
+  {
+    title: "OpenBlox",
+    url: "https://openblox.io",
+    image: "/openblox.jpg",
+    categories: [categories.NFT],
+    price: 0.3,
+    description:
+      "OpenBlox is a platform of multiple games where you own your character as an NFT and you can use this character to battle, breed, hunt, collect and explore. Earning tokens whilst doing this.",
+  },    
 ];
