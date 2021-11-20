@@ -176,7 +176,7 @@ export const allProjects: Project[] = [
     title: "OpenBlox",
     url: "https://openblox.io",
     image: "/openblox.png",
-    categories: [categories.NFT],
+    categories:  [categories.NFT, categories.GAMING, categories.MARKETPLACE],
     price: 0.3,
     description:
       "OpenBlox is a platform of multiple games where you own your character as an NFT and you can use this character to battle, breed, hunt, collect and explore. Earning tokens whilst doing this.",
