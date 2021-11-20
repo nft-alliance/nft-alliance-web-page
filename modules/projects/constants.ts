@@ -94,15 +94,6 @@ export const allProjects: Project[] = [
     price: 0,
   },
   {
-    title: "Arbazaar",
-    url: "https://arbazaar.io/",
-    description:
-      "An Arbitrum-native NFT marketplace with minting, staking, and support for all collections",
-    image: "/arbazaar.png",
-    categories: [categories.MARKETPLACE],
-    price: 0,
-  },
-  {
     title: "OutOfOrbit",
     url: "https://outoforbit.art/",
     description:
@@ -164,6 +155,15 @@ export const allProjects: Project[] = [
       "8,888 intelligent hexapeds. On-chain generated traits. Images are dynamically created in the smart contract using a novel layering approach.",
   },
   {
+    title: "Arbazaar",
+    url: "https://arbazaar.io/",
+    description:
+      "An Arbitrum-native NFT marketplace with minting, staking, and support for all collections",
+    image: "/arbazaar.png",
+    categories: [categories.MARKETPLACE],
+    price: 0,
+  },
+  {
     title: "dGenesis",
     url: "https://dgenesis.io",
     image: "/dgenesis.jpg",
@@ -176,7 +176,7 @@ export const allProjects: Project[] = [
     title: "OpenBlox",
     url: "https://openblox.io",
     image: "/openblox.png",
-    categories:  [categories.NFT, categories.GAMING, categories.MARKETPLACE],
+    categories:  [categories.NFT, categories.GAMING],
     price: 0.3,
     description:
       "OpenBlox is a platform of multiple games where you own your character as an NFT and you can use this character to battle, breed, hunt, collect and explore. Earning tokens whilst doing this.",

@@ -1,21 +1,29 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Layout } from "../modules/app/components/Layout";
 import { ProjectList } from "../modules/projects/components/ProjectList";
 import { allProjects, categories } from "../modules/projects/constants";
 import { Button } from "../modules/app/components/Button";
 import CollaborationList from "../modules/collaborations/components/CollaborationsList";
 
-const Home: NextPage = () => {
-  const [categoriesFiltered, setCategoriesFiltered] = useState([
-    categories.NFT,
-    categories.DEFI,
-    categories.MARKETPLACE,
-    categories.GAMING
-  ]);
+function shuffleArray(array: any[]) {
+  for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+  }
+  return array
+}
 
+const shuffled = shuffleArray(allProjects)
+const Home: NextPage = () => {
+  const [categoriesFiltered, setCategoriesFiltered] = useState<string[]>([]);
+
+  
+  const [projects, setProjects] = useState(shuffled)
   const toggleCategory = (category: string) => {
     setCategoriesFiltered(
       categoriesFiltered.includes(category)
@@ -24,9 +32,12 @@ const Home: NextPage = () => {
     );
   };
 
-  const filteredProjects = allProjects.filter(
+  const filteredProjects = categoriesFiltered.length > 0 ? projects.filter(
     (i) => i.categories.filter((c) => categoriesFiltered.includes(c)).length > 0
-  );
+  ): projects
+
+
+
 
   return (
     <div>
@@ -80,6 +91,16 @@ const Home: NextPage = () => {
                   }
                 </strong>
                 <p>DeFi Projects</p>
+              </div>
+              <div className="hero-info-unit">
+                <strong>
+                  {
+                    allProjects.filter((i) =>
+                      i.categories.includes(categories.GAMING)
+                    ).length
+                  }
+                </strong>
+                <p>Gaming Projects</p>
               </div>
               <div className="hero-info-unit">
                 <strong>
