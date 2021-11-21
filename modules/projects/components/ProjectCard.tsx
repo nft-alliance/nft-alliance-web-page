@@ -21,10 +21,13 @@ export function ProjectCard({
         {project.image && (
           <a href={project.url} target="_blank" rel="noreferrer">
             <div className="project-image">
-              <img
+              <Image
                 src={project.image}
-                width={'100%'}
+                width={"100%"}
+                height={"100%"}
                 alt={`${project.title}-image`}
+                layout="responsive"
+                objectFit="contain"
               />
             </div>
           </a>
