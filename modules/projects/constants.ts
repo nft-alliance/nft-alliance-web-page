@@ -57,7 +57,7 @@ export const allProjects: Project[] = [
     title: "Arbidudes",
     url: "https://arbidudes.xyz/",
     description: "The cutest dudes in the Metaverse. 10k limited Arbidudes.",
-    image: "/arbidudes.png",
+    image: "/arbidudes.gif",
     categories: [categories.NFT],
     price: 0.05,
   },
@@ -135,12 +135,13 @@ export const allProjects: Project[] = [
                   Also enjoy the chance to win some ETH.",
     image: "/punknpunks.png",
     categories: [categories.NFT, categories.LOTTERY],
-    price: 0.01
+    price: 0.01,
   },
   {
     title: "Skull Being Club",
     url: "https://skullbeingclub.com/",
-    description: "$kull ₿eing Club is a collection of 6,000 generative portraits",
+    description:
+      "$kull ₿eing Club is a collection of 6,000 generative portraits",
     image: "/skull-content.gif",
     categories: [categories.NFT],
     price: 0.05,
@@ -176,9 +177,9 @@ export const allProjects: Project[] = [
     title: "OpenBlox",
     url: "https://openblox.io",
     image: "/openblox.png",
-    categories:  [categories.NFT, categories.GAMING],
+    categories: [categories.NFT, categories.GAMING],
     price: 0.3,
     description:
       "OpenBlox is a platform of multiple games where you own your character as an NFT and you can use this character to battle, breed, hunt, collect and explore. Earning tokens whilst doing this.",
-  },    
+  },
 ];
