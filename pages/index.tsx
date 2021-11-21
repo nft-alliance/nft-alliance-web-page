@@ -9,21 +9,23 @@ import { Button } from "../modules/app/components/Button";
 import CollaborationList from "../modules/collaborations/components/CollaborationsList";
 
 function shuffleArray(array: any[]) {
+  const newArr = [...array];
+
   for (var i = array.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
-      var temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
+      var temp = newArr[i];
+      newArr[i] = newArr[j];
+      newArr[j] = temp;
   }
-  return array
+  return newArr
 }
 
-const shuffled = shuffleArray(allProjects)
+// const shuffled = shuffleArray(allProjects)
 const Home: NextPage = () => {
   const [categoriesFiltered, setCategoriesFiltered] = useState<string[]>([]);
 
   
-  const [projects, setProjects] = useState(shuffled)
+  const [projects, setProjects] = useState(allProjects)
   const toggleCategory = (category: string) => {
     setCategoriesFiltered(
       categoriesFiltered.includes(category)
@@ -36,6 +38,9 @@ const Home: NextPage = () => {
     (i) => i.categories.filter((c) => categoriesFiltered.includes(c)).length > 0
   ): projects
 
+  useEffect(() => {
+    setProjects([...(shuffleArray(projects))])
+  }, [])
 
 
 
