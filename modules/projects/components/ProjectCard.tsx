@@ -31,7 +31,11 @@ export function ProjectCard({
         )}
 
         <div className="project-description">{project.description}</div>
-
+        {project.categories.includes(categories.NFT) && (
+            <div className="project-price">
+              Price: {(project.price >= 0 || typeof project.price === 'string')? `${project.price} Ξ` : "Sold out"}
+            </div>
+          )}
         <div className="project-categories">
           <div className="tags">
             {project.categories.map((c) => (
@@ -40,11 +44,7 @@ export function ProjectCard({
               </div>
             ))}
           </div>
-          {project.categories.includes(categories.NFT) && (
-            <div className="project-price">
-              Price: {(project.price >= 0 || typeof project.price === 'string')? `${project.price} Ξ` : "Sold out"}
-            </div>
-          )}
+          
         </div>
       </div>
       <style jsx>{`
