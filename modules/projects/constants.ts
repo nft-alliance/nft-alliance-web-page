@@ -13,7 +13,7 @@ export const allProjects: Project[] = [
     title: "Divergence",
     url: "https://www.divergence-protocol.com",
     description: "Divergence is an AMM-based marketplace for binary options and volatility trading. The project allows its users - called \"DIVERs\" to mint specially forged NFTs that has unique utilities in the future. ",
-    image: "/castledao.png",
+    image: "/divergence.gif",
     categories: [categories.DEFI],
     price: 0,
   },
