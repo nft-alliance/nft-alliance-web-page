@@ -190,4 +190,13 @@ export const allProjects: Project[] = [
     description:
       "OpenBlox is a platform of multiple games where you own your character as an NFT and you can use this character to battle, breed, hunt, collect and explore. Earning tokens whilst doing this.",
   },
+  {
+    title: "Arboreal Apes of Arbitrum",
+    url: "https://arboreal-apes-of-arbitrum.herokuapp.com",
+    description:
+      "Apes that inhabit trees; sometimes they're hidden; a map may be useful; 2000px hi-res images",
+    image: "/arboreal.gif",
+    categories: [categories.NFT],
+    price: 0.05,
+  },
 ];
