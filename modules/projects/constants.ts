@@ -6,6 +6,7 @@ export const categories = {
   DEFI: "defi",
   PONZI: "ponzi",
   MARKETPLACE: "marketplace",
+  AUCTION_HOUSE: "auction house",
   LOTTERY: "lottery",
 };
 export const allProjects: Project[] = [
@@ -199,4 +200,13 @@ export const allProjects: Project[] = [
     categories: [categories.NFT],
     price: 0.05,
   },
+  {
+    title: "Auclantis",
+    url: "https://auclantis.com/",
+    description:
+      "A decentralized NFT auction house with community curation. Stake to earn.",
+    image: "/auclantis.png",
+    categories: [categories.AUCTION_HOUSE],
+    price: 0,
+  }
 ];

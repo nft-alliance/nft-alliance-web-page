@@ -194,6 +194,16 @@ const Home: NextPage = () => {
                 </div>
                 <div
                   className={`category ${
+                    categoriesFiltered.includes(categories.AUCTION_HOUSE)
+                      ? "selected"
+                      : ""
+                  }`}
+                  onClick={() => toggleCategory(categories.AUCTION_HOUSE)}
+                >
+                  AUCTION HOUSE
+                </div>
+                <div
+                  className={`category ${
                     categoriesFiltered.includes(categories.GAMING)
                       ? "selected"
                       : ""
