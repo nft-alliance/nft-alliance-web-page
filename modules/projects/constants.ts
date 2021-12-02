@@ -208,5 +208,14 @@ export const allProjects: Project[] = [
     image: "/auclantis.png",
     categories: [categories.AUCTION_HOUSE],
     price: 0,
+  },
+  {
+    title: "tofuNFT",
+    url: "https://tofunft.com/",
+    description:
+      "tofuNFT.com is a full-featured NFT marketplace with support for multi-currency, royalty and launchpad, deployed on multiple chains.",
+    image: "/tofunft.png",
+    categories: [categories.MARKETPLACE],
+    price: 0,
   }
 ];
