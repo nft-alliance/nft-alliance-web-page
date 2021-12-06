@@ -217,5 +217,14 @@ export const allProjects: Project[] = [
     image: "/tofunft.png",
     categories: [categories.MARKETPLACE],
     price: 0,
+  },
+  {
+    title: "Fraktal",
+    url: "https://fraktal.io/",
+    description:
+      "Fractional NFT protocol, implemented in a Marketplace, NFT DAO, and NFT AMM",
+    image: "/fraktal.png",
+    categories: [categories.MARKETPLACE, categories.DEFI],
+    price: 0,
   }
 ];
