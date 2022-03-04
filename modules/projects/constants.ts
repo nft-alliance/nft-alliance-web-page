@@ -236,4 +236,13 @@ export const allProjects: Project[] = [
     categories: [categories.NFT],
     price: 0.03,
   },
+  {
+    title: "Stratos",
+    url: "https://stratosnft.io/",
+    description:
+      "Discover, collect, and sell digital items on the leading NFT marketplace on Arbitrum.",
+    image: "/stratos.jpeg",
+    categories: [categories.MARKETPLACE],
+    price: 0,
+  },
 ];
