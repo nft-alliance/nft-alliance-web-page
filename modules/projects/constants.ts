@@ -226,5 +226,14 @@ export const allProjects: Project[] = [
     image: "/fraktal.png",
     categories: [categories.MARKETPLACE, categories.DEFI],
     price: 0,
-  }
+  },
+  {
+    title: "vocus and friends",
+    url: "https://vocus.cc/vaf",
+    description:
+      "VAF is a salon-based collection consisting of 3,333 unique artworks designed by vocus, a platform born for creators and words with solid monetization models.",
+    image: "/vaf.png",
+    categories: [categories.NFT],
+    price: 0.03,
+  },
 ];
