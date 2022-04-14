@@ -245,4 +245,13 @@ export const allProjects: Project[] = [
     categories: [categories.MARKETPLACE],
     price: 0,
   },
+  {
+    title: "Arcane",
+    url: "https://www.arcanemagic.net/",
+    description:
+      "An experimental DeFi-RPG from the depths of the universe. What do you seek, traveller?",
+    image: "/ArcaneTitle.gif",
+    categories: [categories.NFT],
+    price: 0.05,
+  },
 ];
