@@ -246,6 +246,15 @@ export const allProjects: Project[] = [
     price: 0,
   },
   {
+    title: "Arcane",
+    url: "https://www.arcanemagic.net/",
+    description:
+      "An experimental DeFi-RPG from the depths of the universe. What do you seek, traveller?",
+    image: "/ArcaneTitle.gif",
+    categories: [categories.NFT],
+    price: 0.05,
+  },
+  {
     title: "GM/GA/GN/WAGMI xNFT set",
     url: "https://docs.xtokenterminal.io/misc/gm-ga-gn-wagmi-nft-set",
     description:
@@ -253,5 +262,5 @@ export const allProjects: Project[] = [
     image: "/xToken.png",
     categories: [categories.NFT, categories.DEFI],
     price: 0,
-  },
+  }
 ];
