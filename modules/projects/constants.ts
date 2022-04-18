@@ -245,4 +245,13 @@ export const allProjects: Project[] = [
     categories: [categories.MARKETPLACE],
     price: 0,
   },
+  {
+    title: "GM/GA/GN/WAGMI xNFT set",
+    url: "https://docs.xtokenterminal.io/misc/gm-ga-gn-wagmi-nft-set",
+    description:
+      "say GM/GA/GN/WAGMI with xToken",
+    image: "/xToken.png",
+    categories: [categories.NFT, categories.DEFI],
+    price: 0,
+  },
 ];
